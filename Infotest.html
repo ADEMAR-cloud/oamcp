@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+    <div class="container">
+        <style>
+            .logo{
+                float: right;
+                margin-left: auto;
+                margin-right: fixed;
+                margin-top: auto;
+            }
+            .tittle{
+                float:left;
+                margin-left: fixed;
+                margin-right: auto;
+                margin-top: auto;
+            }
+        </style>
+    <img src="./logo.png" class="logo" style="height: 150px; width: 150px; position: mid">
+    <h1 class="title">OAMCP MEDICAL CLINIC</h1> 
+    <h2 class="title">Infotest Data Form</h2>
+        </div>
+      </div>
+    </section>
+    <form id="form" class="container m-4 pl-4" method="POST">
+      <div class="field">
+          <label class="label"> </label>
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="Walk-In" value="Walk-In" /> Walk-In
+            </label>
+            <label class="radio">
+              <input type="radio" name="By Appointment" value="By Appointment" /> By Appointment
+            </label>
+            <label class="radio">
+              <input type="radio" name="Scheduled" value="Scheduled" /> Scheduled
+            </label>
+              <div class="field">
+                <label class="label">For Appointment And Scheduled Date and Time Only</label>
+                <div class="control">
+                  <input
+                    class="input"
+                    type="datetime-local"
+                    placeholder="Your Appointment Date"
+                    name="Date and Time"
+                  />
+                </div>
+              </div>
+            </div>
+        </div>
+    <form id="form" class="container m-4 pl-4" method="POST">
+        <div class="field">
+            <label class="label">Procedure</label>
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="Procedure" value="Check-Up / Consultation" /> Check-Up / Consultation
+              </label>
+              <label class="radio">
+                <input type="radio" name="Procedure" value="Surgery" /> Surgery
+              </label>
+              <label class="radio">
+                <input type="radio" name="Procedure" value="Medical / APE" /> Medical / APE
+              </label>
+              <label class="radio">
+                <input type="radio" name="Procedure" value="Lab Test" /> Lab Test
+              </label>
+              <label class="radio">
+                <input type="radio" name="Procedure" value="X-Ray, ECG, Ultrasound" /> X-Ray, ECG, Ultrasound
+              </label>
+              <label class="radio">
+                <input type="radio" name="Procedure" value="Drug Test" /> Drug Test
+              </label>
+            </div>
+          </div>
+
+        <div class="field">
+        <label class="label">First Name</label>
+        <div class="control">
+            <input type="input" 
+            class="input-box" 
+            placeholder="Your First Name"
+            name="First Name">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Middle Name</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Your Middle Name"
+            name="Middle Name"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Last Name</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Your Last Name"
+            name="Last Name"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Mobile Number</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Your Mobile Number"
+            name="Mobile Number"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input
+            class="input"
+            type="email"
+            placeholder="Your Email"
+            name="Email"
+          />
+        </div>
+      </div>
+
+      <!-- <div class="field">
+        <label class="label">Permanent Address</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Your Permanent Address"
+            name="Permanent Address"
+          />
+        </div>
+      </div> -->
+
+      <div class="field">
+        <label class="label">Present Address</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Your Persent Address"
+            name="Present Address"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Age</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Your Age"
+            name="Age"
+          />
+        </div>
+      </div>
+
+      <!-- <div class="field">
+        <label class="label">Last Name</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Your Last Name"
+            name="Last Name"
+          />
+        </div>
+      </div> -->
+
+      <div class="field">
+        <label class="label">Company Name</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Your Company Name"
+            name="Company Name"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Civil Status</label>
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="Civil Status" value="Single" /> Single
+          </label>
+          <label class="radio">
+            <input type="radio" name="Civil Status" value="Married" /> Married
+          </label>
+          <label class="radio">
+            <input type="radio" name="Civil Status" value="Widowed" /> Widowed
+          </label>
+          <label class="radio">
+            <input type="radio" name="Civil Status" value="Divorced" /> Divorced
+          </label>
+          <label class="radio">
+            <input type="radio" name="Civil Status" value="Separated" /> Separated
+          </label>
+          <!-- <label class="radio">
+            <input type="radio" name="Civil Status" value="Separated but still legally married" /> Separated but still legally married
+          </label> -->
+        </div>
+      </div>
+
+      <!-- <div class="field">
+        <label class="label">Password</label>
+        <div class="control">
+          <input
+            class="input"
+            type="password"
+            placeholder="Your Password"
+            name="Password"
+          />
+        </div>
+      </div> -->
+
+      <div class="field">
+        <label class="label">Date of Birth</label>
+        <div class="control">
+          <input
+            class="input"
+            type="date"
+            placeholder="Your Date of Birth"
+            name="DOB"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Gender</label>
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="Gender" value="male" /> Male
+          </label>
+          <label class="radio">
+            <input type="radio" name="Gender" value="female" /> Female
+          </label>
+        </div>
+      </div>
+
+    <!-- <div>
+        <div class="bg"></div>
+        <div class="terms-box"></div>
+            <div class="terms-text"></div>
+                <h2>Terms And Conditions</h2>
+                <p>Last Edit: 12/04/2024</p>
+                <p>Greetings to all CLient</p>
+                <p>OAMCP Medical Clinic - Client Information Sheet Terms and Conditions
+
+                    By filling out the Client Information Sheet for OAMCP Medical Clinic (hereafter referred to as "the Clinic"), you (the "Client") agree to the following terms and conditions:
+                    
+                    Accuracy of Information:
+                    
+                    The Client acknowledges that all personal, medical, and health-related information provided on this Client Information Sheet is true, accurate, and complete to the best of their knowledge.
+                    The Client agrees to promptly notify the Clinic of any changes to the provided information.
+                    Confidentiality:
+                    
+                    All information provided will be kept confidential and will only be shared with authorized medical staff, as required for the provision of healthcare services.
+                    The Clinic complies with applicable privacy laws and regulations (such as HIPAA, GDPR, or others as applicable) to protect the privacy of personal and health information.
+                    Consent to Treatment:
+                    
+                    By submitting the Client Information Sheet, the Client consents to receiving medical treatment from the Clinic's healthcare providers, including examinations, diagnostic tests, and procedures as deemed necessary by the medical team.
+                    The Client understands that they have the right to ask questions and seek clarification regarding their treatment options and that they can refuse treatment at any time.
+                    Financial Responsibility:
+                    
+                    The Client agrees to assume responsibility for all medical fees and charges incurred during their visits to the Clinic, including but not limited to consultation fees, treatment costs, and any other services provided.
+                    The Client agrees to pay for services in accordance with the payment terms set by the Clinic, which may include out-of-pocket costs, insurance billing, or other arrangements.
+                    Insurance Information:
+                    
+                    The Client is responsible for providing accurate insurance information, if applicable. The Clinic will assist with insurance claims as a courtesy but makes no guarantee of insurance coverage or reimbursement.
+                    The Client acknowledges that they may be personally responsible for charges not covered by their insurance plan.
+                    Appointment Scheduling and Cancellation:
+                    
+                    The Client agrees to keep all scheduled appointments or inform the Clinic in advance if they need to reschedule or cancel.
+                    The Clinic reserves the right to charge a cancellation fee if the Client fails to cancel or reschedule an appointment within the designated time frame.
+                    Emergency Situations:
+                    
+                    The Client agrees to seek emergency medical care through appropriate channels if they experience urgent or life-threatening health concerns.
+                    The Clinic is not responsible for emergency care outside the scope of services it provides.
+                    Liability Waiver:
+                    
+                    The Client acknowledges that the Clinic, its staff, and healthcare providers are not liable for any medical complications or adverse reactions that may occur as a result of treatment or services rendered.
+                    Minors:
+                    
+                    For clients under the age of 18, a parent or legal guardian must complete and sign the Client Information Sheet, providing consent for treatment.
+                    Right to Refuse Service:
+                    
+                    The Clinic reserves the right to refuse service to any individual for reasons including, but not limited to, non-compliance with the Clinic’s policies, disruptive behavior, or inability to pay for services.
+                    Amendments to Terms:
+                    
+                    The Clinic reserves the right to amend or modify these terms and conditions at any time. Clients will be notified of significant changes, and they must agree to the revised terms before continuing services.
+                    Acknowledgment of Terms:
+                    
+                    By signing below or electronically submitting this form, the Client acknowledges that they have read, understood, and agreed to the terms and conditions outlined above.</p>
+            <h4>I Agree to the <span> Terms And Conditions </span></h4>
+            <div class="buttons">
+                <button class="btn red-btn">Accept</button>
+                <button class="btn gray-btn">Decline</button> 
+        </div> -->
+
+      </div>
+
+      <div class="field">
+        <label class="label">Agree to Terms</label>
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox" name="Agree To Terms" value="yes" /> I agree
+            to the terms and conditions
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Chief Complaint or Medical Purpose</label>
+        <div class="control">
+          <textarea
+            class="textarea"
+            placeholder="Your Chief Complaint or Medical Purpose"
+            name="Chief Complaint or Medical Purpose"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-primary" type="submit" id="submit-button">
+            Submit
+          </button>
+        </div>
+        <div class="control">
+          <button class="button is-danger">Cancel</button>
+        </div>
+      </div>
+    </form>
+    <div
+      id="message"
+      style="
+        display: none;
+        margin: 20px;
+        font-weight: bold;
+        color: green;
+        padding: 8px;
+        background-color: beige;
+        border-radius: 4px;
+        border-color: aquamarine;
+      "
+    ></div>
+
+    <div>
+        <label class="label">***THIS IS A FREE VERSION ONLY***<div class="field">
+              </label>
+            </div>
+          </div></label>
+        </div>
+      </div>
+
+    <div>
+        <label class="label">© 2019 - 2024   ADEMAR NETWORK. All rights reserved.  |    |  ADEMAR Network Operating Guidelines  |  Contact ADMIN: ADEMAR<div class="field">
+              </label>
+            </div>
+          </div></label>
+        </div>
+      </div>
+    
+
+    <script>
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+        document.getElementById("message").textContent = "Submitting..";
+        document.getElementById("message").style.display = "block";
+        document.getElementById("submit-button").disabled = true;
+
+        // Collect the form data
+        var formData = new FormData(this);
+        var keyValuePairs = [];
+        for (var pair of formData.entries()) {
+          keyValuePairs.push(pair[0] + "=" + pair[1]);
+        }
+
+        var formDataString = keyValuePairs.join("&");
+
+        // Send a POST request to your Google Apps Script
+        fetch(
+          "https://script.google.com/macros/s/AKfycbyEffz3JRw-0yfDW2Bdc-mQRis-res_D9XK0a_ntTOTI2_KNOQ5uJU6iKgxMkGHEFT1/exec",
+          {
+            redirect: "follow",
+            method: "POST",
+            body: formDataString,
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8",
+            },
+          }
+        )
+          .then(function (response) {
+            // Check if the request was successful
+            if (response) {
+              return response; // Assuming your script returns JSON response
+            } else {
+              throw new Error("Failed to submit the form.");
+            }
+          })
+          .then(function (data) {
+            // Display a success message
+            document.getElementById("message").textContent =
+              "Data submitted successfully!";
+            document.getElementById("message").style.display = "block";
+            document.getElementById("message").style.backgroundColor = "green";
+            document.getElementById("message").style.color = "beige";
+            document.getElementById("submit-button").disabled = false;
+            document.getElementById("form").reset();
+
+            setTimeout(function () {
+              document.getElementById("message").textContent = "";
+              document.getElementById("message").style.display = "none";
+            }, 2600);
+          })
+          .catch(function (error) {
+            // Handle errors, you can display an error message here
+            console.error(error);
+            document.getElementById("message").textContent =
+              "An error occurred while submitting the form.";
+            document.getElementById("message").style.display = "block";
+          });
+      });
+    </script>
+  </body>
+</html>

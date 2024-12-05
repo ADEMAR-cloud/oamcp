@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <style>
+            .logo{
+                float: right;
+                margin-left: auto;
+                margin-right: fixed;
+                margin-top: auto;
+            }
+            .tittle{
+                float:left;
+                margin-left: fixed;
+                margin-right: auto;
+                margin-top: auto;
+            }
+        </style>
+    <img src="./logo.png" class="logo" style="height: 150px; width: 150px; position: mid">
+          <h1 class="title">OAMCP MEDICAL CLINIC</h1>
+          <h2 class="title">X-RAY PORTAL</h2>
+        </div>
+      </div>
+    </section>
+    <form id="form" class="container m-4 pl-4" method="POST">
+      <div class="field">
+              <div class="field">
+                <label class="label">Date and Time In</label>
+                <div class="control">
+                  <input
+                    class="input"
+                    type="datetime-local"
+                    placeholder="Your Appointment Date"
+                    name="Date and Time In"
+                  />
+                </div>
+              </div>
+            </div>
+        </div>
+    <!-- <form id="form" class="container m-4 pl-4" method="POST">
+        <div class="field">
+            <label class="label">Procedure</label>
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="Procedure" value="Check-Up / Consultation" /> Check-Up / Consultation
+              </label>
+              <label class="radio">
+                <input type="radio" name="Procedure" value="Surgery" /> Surgery
+              </label>
+              <label class="radio">
+                <input type="radio" name="Procedure" value="Medical / APE" /> Medical / APE
+              </label>
+              <label class="radio">
+                <input type="radio" name="Procedure" value="Lab Test" /> Lab Test
+              </label>
+              <label class="radio">
+                <input type="radio" name="Procedure" value="X-Ray, ECG, Ultrasound" /> X-Ray, ECG, Ultrasound
+              </label>
+              <label class="radio">
+                <input type="radio" name="Procedure" value="Drug Test" /> Drug Test
+              </label>
+            </div>
+          </div> -->
+
+        <div class="field">
+        <label class="label">First Name</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Patient First Name"
+            name="First Name"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Middle Name</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Patient Middle Name"
+            name="Middle Name"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Last Name</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Patient Last Name"
+            name="Last Name"
+          />
+        </div>
+      </div>
+
+      <!--<div class="field">
+        <label class="label">Procedure and Price</label>
+        <div class="control">
+          <textarea
+            class="textarea"
+            placeholder="Procedure and Price"
+            name="Procedure and Price"
+          ></textarea>
+        </div>
+      </div> -->
+
+      <label class="label"> Procedure Done </label>
+      <div class="control">
+        <label class="radio">
+          <input type="radio" name="Procedure Done" value="Yes" /> Yes
+        </label>
+        <label class="radio">
+          <input type="radio" name="Procedure Done" value="No" /> No
+        </label>
+        <label class="radio">
+          <input type="radio" name="Procedure Done" value="No Offline Server" /> No Offline Server
+        </label>
+        <label class="radio">
+        </label>
+        <input type="radio" name="Procedure Done" value="Others" /> Others
+        </label>
+        <input
+        class="input"
+        type="text"
+        placeholder="Others pls specify"
+        name="Others"
+      />
+      </div>
+    </div>
+
+      </div>
+        </section>
+        <form id="form" class="container m-4 pl-4" method="POST">
+        <div class="field">
+            <div class="field">
+              <label class="label">Date and Time Done</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="datetime-local"
+                  placeholder="Your Appointment Date"
+                  name="Date and Time Done"
+                />
+              </div>
+            </div>
+          </div>
+      </div>
+
+     <!-- <div class="field">
+        <label class="label">Cash In</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Cash In"
+            name="Cash In"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Cash Out</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Cash Out"
+            name="Cash Out"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Balance</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Balance"
+            name="Balance"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Note</label>
+        <div class="control">
+          <textarea
+            class="textarea"
+            placeholder="Note"
+            name="Note"
+          ></textarea>
+        </div>
+      </div> -->
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-primary" type="submit" id="submit-button">
+            Submit
+          </button>
+        </div>
+        <div class="control">
+          <button class="button is-danger">Cancel</button>
+        </div>
+      </div>
+    </form>
+    <div
+      id="message"
+      style="
+        display: none;
+        margin: 20px;
+        font-weight: bold;
+        color: green;
+        padding: 8px;
+        background-color: beige;
+        border-radius: 4px;
+        border-color: aquamarine;
+      "
+    ></div>
+
+    <div>
+        <label class="label">***THIS IS A FREE VERSION ONLY***<div class="field">
+              </label>
+            </div>
+          </div></label>
+        </div>
+      </div>
+
+    <div>
+        <label class="label">© 2019 - 2024   ADEMAR NETWORK. All rights reserved.  |    |  ADEMAR Network Operating Guidelines  |  Contact ADMIN: ADEMAR<div class="field">
+              </label>
+            </div>
+          </div></label>
+        </div>
+      </div>
+    
+
+    <script>
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+        document.getElementById("message").textContent = "Submitting..";
+        document.getElementById("message").style.display = "block";
+        document.getElementById("submit-button").disabled = true;
+
+        // Collect the form data
+        var formData = new FormData(this);
+        var keyValuePairs = [];
+        for (var pair of formData.entries()) {
+          keyValuePairs.push(pair[0] + "=" + pair[1]);
+        }
+
+        var formDataString = keyValuePairs.join("&");
+
+        // Send a POST request to your Google Apps Script
+        fetch(
+          "https://script.google.com/macros/s/AKfycbygl0QCiWHWRI_-zlSia0s_GfUb2bhnM5PNG3P5gVXzV658-dYTEi9qTq6nPaHUOTDi/exec",
+          {
+            redirect: "follow",
+            method: "POST",
+            body: formDataString,
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8",
+            },
+          }
+        )
+          .then(function (response) {
+            // Check if the request was successful
+            if (response) {
+              return response; // Assuming your script returns JSON response
+            } else {
+              throw new Error("Failed to submit the form.");
+            }
+          })
+          .then(function (data) {
+            // Display a success message
+            document.getElementById("message").textContent =
+              "Data submitted successfully!";
+            document.getElementById("message").style.display = "block";
+            document.getElementById("message").style.backgroundColor = "green";
+            document.getElementById("message").style.color = "beige";
+            document.getElementById("submit-button").disabled = false;
+            document.getElementById("form").reset();
+
+            setTimeout(function () {
+              document.getElementById("message").textContent = "";
+              document.getElementById("message").style.display = "none";
+            }, 2600);
+          })
+          .catch(function (error) {
+            // Handle errors, you can display an error message here
+            console.error(error);
+            document.getElementById("message").textContent =
+              "An error occurred while submitting the form.";
+            document.getElementById("message").style.display = "block";
+          });
+      });
+    </script>
+  </body>
+</html>
